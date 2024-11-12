@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Crear Usuario</h2>
+<form method="post">
+    <label>Nombre: <input type="text" name="nombre" required></label><br>
+    <label>Apellido: <input type="text" name="apellido" required></label><br>
+    <label>Teléfono: <input type="text" name="telefono" required></label><br>
+    <label>Dirección: <input type="text" name="direccion" required></label><br>
+    <button type="submit">Crear</button>
+</form>
+{% endblock %}

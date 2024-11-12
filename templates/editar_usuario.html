@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Editar Usuario</h2>
+<form method="post">
+    <label>Nombre: <input type="text" name="nombre" value="{{ usuario.nombre }}" required></label><br>
+    <label>Apellido: <input type="text" name="apellido" value="{{ usuario.apellido }}" required></label><br>
+    <label>Teléfono: <input type="text" name="telefono" value="{{ usuario.telefono }}" required></label><br>
+    <label>Dirección: <input type="text" name="direccion" value="{{ usuario.direccion }}" required></label><br>
+    <button type="submit">Guardar Cambios</button>
+</form>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Editar Producto</h2>
+<form method="post">
+    <label>Nombre: <input type="text" name="nombre" value="{{ producto.nombre }}" required></label><br>
+    <label>Descripción: <input type="text" name="descripcion" value="{{ producto.descripcion }}" required></label><br>
+    
+    <button type="submit">Guardar Cambios</button>
+</form>
+{% endblock %}

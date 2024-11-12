@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Crear Producto</h2>
+<form method="post">
+    <label>Nombre: <input type="text" name="nombre" required></label><br>
+    <label>Descripción: <input type="text" name="descripcion" required></label><br>
+    <button type="submit">Crear</button>
+</form>
+{% endblock %}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Tienda CompraAqui</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda CompraAqui</h1>
+        <br>
+        <a href="{{ url_for('home') }}">Inicio</a>
+        <a href="{{ url_for('listar_usuarios') }}">Usuarios</a>
+        <a href="{{ url_for('listar_productos') }}">Productos</a>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
